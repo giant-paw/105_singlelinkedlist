@@ -85,3 +85,20 @@ void addNode() {
 		else
 			return false;
 	}
+
+	void traverse() {
+		if (listEmpty()) {
+			cout << "List Kosong" << endl;
+			system("pause");
+			system("cls");
+			return;
+		}
+		else {
+			Node* currentNode = START;
+			while (currentNode != NULL) {
+				cout << "nim : " << currentNode->noMhs << ", Nama " << currentNode->name << endl;
+				currentNode = currentNode->next;
+			}
+		}
+	}
+
